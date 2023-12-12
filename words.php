@@ -1,8 +1,8 @@
 <?php
-$paragraph = $_GET['paragraph'];
+$paragraph = $_GET['paragraph']
 $badword = $_GET['badword'];
 $p_length = strlen($paragraph);
-$censor = str_replace($badword, '***', $paragraph);
+$censured = str_replace($badword, '***', $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ $censor = str_replace($badword, '***', $paragraph);
 
     <div class="censored">
         <h1>Il tuo paragrafo censurato:</h1>
-        <p><?php echo "$censor" ?></p>
+        <p><?php echo "$censured" ?></p>
         <p>Il paragrafo da te inserito è lungo:
             <?php
             echo $p_length;
